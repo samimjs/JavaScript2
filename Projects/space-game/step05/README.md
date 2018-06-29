@@ -1,5 +1,7 @@
 # Step 5 - Removing lasers
 
+[Play this version](https://rawgit.com/HackYourFutureBelgium/JavaScript2/master/Projects/space-game/step05/index.html)
+
 Our lasers remain in the document, even when they disappear offscreen. We now use [`removeChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) to remove an element offscreen.
 
 Note that we have both the **abstract** state of the game in our `GAME_STATE`, and the **visual state** in the DOM. We need to keep them in sync. Our `destroyLaser` function sets the `isDead` state to `true`, indicating the laser should be removed. We then use [`Array.filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) to remove the "dead" lasers from the list.

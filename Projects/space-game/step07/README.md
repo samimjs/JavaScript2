@@ -1,5 +1,7 @@
 # Step 7 - Hit detection
 
+[Play this version](https://rawgit.com/HackYourFutureBelgium/JavaScript2/master/Projects/space-game/step07/index.html)
+
 In our `updateLasers` function we add code to check if the laser hits an enemy. We use [`getBoundingClientRect`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) to find the position of the laser and the enemy on screen, and we check if they intersect.
 
 For this we write a double loop:

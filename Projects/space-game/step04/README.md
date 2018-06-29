@@ -1,5 +1,7 @@
 # Step 4 - Firing lasers
 
+[Play this version](https://rawgit.com/HackYourFutureBelgium/JavaScript2/master/Projects/space-game/step04/index.html)
+
 This is a big step — we can now let our player fire lasers!
 
 We create a new laser element using `document.createElement`, just like we did with the player element. We append it to a custom array called `lasers` so that we can update them later.
