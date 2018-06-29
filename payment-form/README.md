@@ -4,6 +4,8 @@ This payment form shows you the basics of form processing and DOM manipulation. 
 
 ![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/payment-form/screenshot.png)
 
+[Example on CodePen](https://codepen.io/fdb/pen/PaXQQB)
+
 ### Email Format
 
 Validation of email addresses is [notouriously hard](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643). Here we just check whether the email address contains a "@" sign.
