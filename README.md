@@ -11,9 +11,16 @@ Here you can find course content and homework for the JavaScript2 module
 |2.|• Functions + JSON/Arrays<br>• [Array Manipulations](../../../fundamentals/blob/master/fundamentals/array_manipulation.md)<br>• JSON<br>• [Map and filter](../../../fundamentals/blob/master/fundamentals/map_filter.md)<br>• Arrow functions |[Reading Week 2](/Week2/README.md)|[Homework Week 2](/Week2/MAKEME.md)|
 |3.|• [Closures](../../../fundamentals/blob/master/fundamentals/scope_closures_this.md) <br>• Callbacks|[Reading Week 3](/Week3/README.md)|[Homework Week 3](/Week3/MAKEME.md)|
 
+
 __Kind note:__
 
 We expect you to __always__ come prepared to the class on Sunday.
+
+# Projects
+
+We will create a number of projects in this course, which you can find here:
+
+* [Payment Form](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/payment-form)
 
 ### Overall
 A good understanding of all the above mentioned topics. Want to check your Knowledge? Go through the [JavaScript Fundamentals README](../../../fundamentals/blob/master/fundamentals/README.md) and research/ ask for help (Slack!) with the concepts that are not entirely clear.
