@@ -2,6 +2,8 @@
 
 This payment form shows you the basics of form processing and DOM manipulation. It includes code to react to user input (key events), and change DOM elements based on the input (in this case, we check if the form elements are valid or not).
 
+![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/payment-form/screenshot.png)
+
 ### Email Format
 
 Validation email addresses is [notouriously hard](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643). We just check whether the email address contains a "@" sign.
