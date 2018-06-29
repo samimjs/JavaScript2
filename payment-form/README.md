@@ -6,7 +6,7 @@ This payment form shows you the basics of form processing and DOM manipulation. 
 
 ### Email Format
 
-Validation email addresses is [notouriously hard](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643). We just check whether the email address contains a "@" sign.
+Validation of email addresses is [notouriously hard](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643). Here we just check whether the email address contains a "@" sign.
 
 ### Credit Card Format
 
