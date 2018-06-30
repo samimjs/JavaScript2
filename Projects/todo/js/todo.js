@@ -4,6 +4,7 @@ let TODOS = [
     // {id: 3, title: 'Finish this project', done: false}
 ];
 let FILTER = 'all';
+let EDITING_ID = null;
 
 function makePlural(word, count) {
     if (count === 1) {
@@ -25,9 +26,16 @@ function update() {
         filteredTodos = TODOS.filter(todo => todo.done);
     }
     filteredTodos.forEach(({id, title, done}) => {
-        $li = document.createElement('li');
+        const $li = document.createElement('li');
         $li.dataset.id = id;
-        $toggle = document.createElement('input');
+        $li.addEventListener('dblclick', onStartEditing.bind(null, id));
+        if (EDITING_ID === id) {
+            $li.classList.add('editing');
+        }
+        $todoList.appendChild($li);
+
+        // Toggle button
+        const $toggle = document.createElement('input');
         $toggle.setAttribute('class', 'toggle');
         $toggle.setAttribute('type', 'checkbox');
         if (done) {
@@ -35,14 +43,28 @@ function update() {
         }
         $toggle.addEventListener('change', onToggleTodo.bind(null, id));
         $li.appendChild($toggle);
-        $label = document.createElement('label');
+
+        // Label
+        const $label = document.createElement('label');
         $label.innerHTML = title;
         $li.appendChild($label);
-        $button = document.createElement('button');
+
+        // Delete button
+        const $button = document.createElement('button');
         $button.setAttribute('class', 'destroy');
         $button.addEventListener('click', onDeleteTodo.bind(null, id));
         $li.appendChild($button);
-        $todoList.appendChild($li);
+
+        // Input field
+        if (EDITING_ID === id) {
+            const $input = document.createElement('input');
+            $input.setAttribute('class', 'edit');
+            $input.addEventListener('change', onCommitEditing.bind(null, id));
+            $input.addEventListener('blur', onCancelEditing.bind(null, id));
+            $li.appendChild($input);
+            $input.value = title;
+            $input.focus();
+        }
     });
     if (TODOS.length === 0) {
         document.querySelector('.main').style.display = 'none';
@@ -82,6 +104,23 @@ function onChangeFilter(filter, e) {
 
 function onClearCompleted() {
     TODOS = TODOS.filter(todo => !todo.done);
+    update();
+}
+
+function onStartEditing(id) {
+    EDITING_ID = id;
+    update();
+}
+
+function onCommitEditing(id, e) {
+    const item = TODOS.find(todo => todo.id === id);
+    item.title = e.target.value.trim();
+    EDITING_ID = null;
+    update();
+}
+
+function onCancelEditing(id) {
+    EDITING_ID = null;
     update();
 }
 
