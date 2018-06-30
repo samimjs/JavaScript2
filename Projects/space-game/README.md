@@ -1,6 +1,6 @@
 # Space Invaders
 
-![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/spacegame/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/space-game/screenshot.png)
 
 A clone of [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders), specially built for teaching purposes!
 
