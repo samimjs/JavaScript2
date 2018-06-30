@@ -2,7 +2,7 @@
 
 This payment form shows you the basics of form processing and DOM manipulation. It includes code to react to user input (key events), and change DOM elements based on the input (in this case, we check if the form elements are valid or not).
 
-![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/payment-form/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/payment-form/screenshot.png)
 
 [Example on CodePen](https://codepen.io/fdb/pen/PaXQQB)
 
