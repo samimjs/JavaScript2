@@ -25,7 +25,6 @@ We expect you to __always__ come prepared to the class on Sunday.
 We will create a number of projects in this course, which you can find here:
 
 * [Payment Form](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/payment-form)
-* [Todo App](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/todo)
 * [Space Game](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/space-game)
 
 ### Overall
