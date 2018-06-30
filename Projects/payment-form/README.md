@@ -4,7 +4,7 @@ This payment form shows you the basics of form processing and DOM manipulation. 
 
 ![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/payment-form/screenshot.png)
 
-[Example on CodePen](https://codepen.io/fdb/pen/PaXQQB)
+[Live Demo](https://rawgit.com/HackYourFutureBelgium/JavaScript2/master/Projects/payment-form/index.html)
 
 ### Email Format
 
