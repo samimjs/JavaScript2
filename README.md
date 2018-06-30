@@ -16,6 +16,10 @@ __Kind note:__
 
 We expect you to __always__ come prepared to the class on Sunday.
 
+# Slides
+
+* [Week 1](https://docs.google.com/presentation/d/1HXy964p5sjNScIOQpNhQSIzvYHUc7VzCaKQmftPoPnI/edit)
+
 # Projects
 
 We will create a number of projects in this course, which you can find here:
