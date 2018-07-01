@@ -24,8 +24,10 @@ We expect you to __always__ come prepared to the class on Sunday.
 
 We will create a number of projects in this course, which you can find here:
 
+* [Web Scraper (IMDB)](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/web-scraper)
 * [Payment Form](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/payment-form)
 * [Space Game](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/space-game)
+* [Todo App](https://github.com/HackYourFutureBelgium/JavaScript2/tree/master/Projects/todo-app)
 
 ### Overall
 A good understanding of all the above mentioned topics. Want to check your Knowledge? Go through the [JavaScript Fundamentals README](../../../fundamentals/blob/master/fundamentals/README.md) and research/ ask for help (Slack!) with the concepts that are not entirely clear.
