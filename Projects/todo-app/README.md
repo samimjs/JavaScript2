@@ -2,7 +2,7 @@
 
 Simple bare-bones TODO app based on [TodoMVC](http://todomvc.com/).
 
-![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/todo/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HackYourFutureBelgium/JavaScript2/master/Projects/todo-app/screenshot.png)
 
 * Step 1: Starter template
 * Step 2: Adding todo items
