@@ -11,6 +11,8 @@ A clone of [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders), speci
 The project is divided into multiple steps:
 
 * [**Step 1**](./step01): Creating and moving the player
+* [**Step 2**](./step02): Correct key input
+* [**Step 3**](./step03): Correct timing
 
 ## Credits
 
