@@ -3,7 +3,7 @@ const VISA_REG_EX = /^(4[0-9]{15})$/;
 function onChangeEmailField(e) {
     const field = e.target;
     const parent = field.parentElement;
-    const errorSpan = field.parentElement.querySelector('.error');
+    const errorSpan = parent.querySelector('.error');
     const value = field.value;
     const isValid = value.includes('@');
     if (isValid) {
@@ -18,7 +18,7 @@ function onChangeEmailField(e) {
 function onChangeCardField(e) {
     const field = e.target;
     const parent = field.parentElement;
-    const errorSpan = field.parentElement.querySelector('.error');
+    const errorSpan = parent.querySelector('.error');
     let value = field.value;
     value = value.replace(/\s/g, '');
     const isValid = VISA_REG_EX.test(value);
