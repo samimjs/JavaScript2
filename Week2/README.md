@@ -4,14 +4,14 @@
 
 ```
 In week two we will discuss the following topics:
-• Functions + JSON/Arrays
+• DOM creation
+• Functions
 • Array Manipulations
-• JSON
 • Map and filter
 • Arrow functions
 ```
 
-## Here are resources that we like you to read as a preparation for the coming lecture. 
+## Here are resources that we like you to read as a preparation for the coming lecture.
 
 ### JSON
 - [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)

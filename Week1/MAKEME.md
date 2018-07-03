@@ -94,16 +94,12 @@ Make sure you have read [The Document Object Model](http://eloquentjavascript.ne
 
 Go trough the reading material in the [README.md](/Week2/README.md) to prepare for your next class.
 
-## :boom: Bonus homework :boom:
+## :boom: Bonus homework — JavaScript Drum kit :boom:
 the Bonus homework for this week (for those of you want an extra challenge) do the following:
 
-- Sign up on codewars.com
-- In you account setting under “clan” write “Hack Your Future”
-- Go do the challenges in the following playlist: https://www.codewars.com/collections/fun-fun-fundamentals
+- Sign up for Wes Bos's excellent [JavaScript 30](https://javascript30.com/) website — a video course where he creates 30 projects using JavaScript. This is a great place to continue rehearsing what you learned!
+- Enter your email address on the website. You should get an invitation link.
+- Once you're in, download the [starter files](https://github.com/wesbos/JavaScript30).
+- Watch and complete the "Getting Setup" and "JavaScript Drum Kit" videos.
 
-Codewars is really a lot of fun, and you can compete against each other who has the most points :trollface:
-it’s a great way to really practice JavaScript a lot in various problems.
-
-Please note, there are various challenges all sorted on difficultly called KIU. Kiu 8 is the easiest, Kiu 1 is the hardest, we expect you to do challenges around level 8, 7 maybe.
-
-Enjoy!
+Have fun!
