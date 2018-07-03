@@ -2,12 +2,16 @@
 
 ```
 In week three we will discuss the following topics:
+• JSON/Arrays
 • Closures
 • Scope
 • Callbacks
 ```
 
 ## Here are resources that we like you to read as a preparation for the coming lecture:
+
+### JSON
+- [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)
 
 ### Closures
 

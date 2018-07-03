@@ -13,22 +13,17 @@ In week two we will discuss the following topics:
 
 ## Here are resources that we like you to read as a preparation for the coming lecture.
 
-### JSON
-- [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)
-
 ### Map and Filter
 - :dizzy: [Fun fun functional](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) :dizzy: Check the first 3-4 videos.
 
-### Code conventions
-- Code conventions: http://crockford.com/javascript/code.html
-
 ### Array cardio
-- Wes Bos' awesome free tutorials. Just make a free account and do Array Cardio #1 [here](https://javascript30.com/)
+- If you haven't already signed up for [JavaScript 30](https://javascript30.com/), do it now. These are excellent free video tutorials that really want to help you get better with JavaScript. Sign up with your email address to get started.
+- Once you're in, download the [starter files](https://github.com/wesbos/JavaScript30).
+- Watch and do the Array Cardio Day 1 video.
 
 ### From _Eloquent JavaScript_
 
 - Objects continued: http://eloquentjavascript.net/06_object.html
-
 
 ## Recommended readings
 
