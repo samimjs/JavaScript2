@@ -19,6 +19,7 @@ We expect you to __always__ come prepared to the class on Sunday.
 # Slides
 
 * [Week 1](https://docs.google.com/presentation/d/1HXy964p5sjNScIOQpNhQSIzvYHUc7VzCaKQmftPoPnI/edit)
+* [Week 2](https://docs.google.com/presentation/d/17vy0_0CXHQD07lIXRY2vCqBvCp3fgU68J0LYGWZHLBE/edit)
 
 # Projects
 
