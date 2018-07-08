@@ -2,122 +2,51 @@
 
 ```
 Topics discussed this week:
-• Functions + JSON/Arrays
+• Functions
+• Creating (nested) elements in the DOM
 • Array Manipulations
-• JSON
-• Map and filter
-• Arrow functions
+• Higher-order functions: find
+• Arrow functions (a bit)
 ```
 
 >[Here](/Week3/README.md) you find the readings you have to complete before the third lecture.
 
-## Step 1: Feedback
+## Step 1: Space game: recreating what we saw in class
 
-_Deadline Monday_
+_Deadline Tuesday_ 
 
-Go through the `html-css`, `javascript1` and `javascript2` Github repositories of one of your fellow students, check if they have neat repository's with the different weeks (eg. `week1`, `week2`, `week3`)of homework for all the modules up and until now. Also check if they have hosted their homework on Github pages. If there is anything that they can improve please provide feedback in an issue.
+At the end of the lesson, we let the spaceship move using our `keyup` and `keydown` handlers. Your code still has `keypress` handler. Change the code according to [step 2](/Projects/space-game/step02) of the space-game project.
 
-## Step 2: More map, filter and `=>`
+## Step 2: Todo app: Updating items left
 
-_Deadline Wednesday_
+_Deadline Thursday_
 
-**2.1** Say you would like to write a program that doubles the odd numbers in an array and throws away the even number.
+Our todo app can mark items as completed. In the bottom left corner is a `div` that shows how many items we haven't completed. Let's try filling that in.
 
-Your solution could be something like this:
+**2.1** Look at the [working version](http://todomvc.com/examples/vanillajs/) (this is just to see the functionality, the code is quite different). Note that we only show items that we _haven't_ completed. As soon as we complete an item, the list count decreases. So we have to find a way to _filter_ all todo items based on whether they are done or not. 
+**2.1** This functionality should come at the end of the `update` function. 
+**2.2** Read up on the [filter function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) and [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+**2.3** If you get stuck, `filter` and arrow functions are also explained in the [JavaScript 30](https://javascript30.com/) "Array Cardio Day 1" video.
+**2.4** The correct spelling is "0 item*s*", "1 item", "2 item*s*", ... Could we make a function that takes a word and a count and "pluralizes" it? Note that it doesn't need to know the rules to make the plural of every english word (like mouse --> mice), just item --> items.
 
-```js
-const numbers = [1, 2, 3, 4];
-const newNumbers = [];
-
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 !== 0) {
-    newNumbers.push(numbers[i] * 2);
-  }
-}
-
-console.log('The doubled numbers are', newNumbers); // ==> [2, 6]
-
-```
-
-Rewrite the above program using `map` and `filter` don't forget to use `=>`.
-
----
-
-**2.2** Underneath you see a very interesting small insight in Maartje's work:
-
-```js
-const monday = [
-  {
-    name: 'Write a summary HTML/CSS',
-    duration: 180
-  },
-  {
-    name: 'Some web development',
-    duration: 120
-  },
-  {
-    name: 'Fix homework for class10',
-    duration: 20
-  },
-  {
-    name: 'Talk to a lot of people',
-    duration: 200
-  }
-];
-
-const tuesday = [
-  {
-    name: 'Keep writing summary',
-    duration: 240
-  },
-  {
-    name: 'Some more web development',
-    duration: 180
-  },
-  {
-    name: 'Staring out the window',
-    duration: 10
-  },
-  {
-    name: 'Talk to a lot of people',
-    duration: 200
-  },
-  {
-    name: 'Look at application assignments new students',
-    duration: 40
-  }
-];
-
-const tasks = monday.concat(tuesday);
-```
-
-_Note: the durations are specified in minutes._
-
-Write a program that computes how much Maartje has earned by completing these tasks, using `map` and `filter`. For the 'summing part' you can try your luck with `reduce`; alternatively, you may use `forEach` or a `for` loop.
-
-Follow these steps. Each step should build on the result of the previous step. 
-
-- Map the tasks to durations in hours.
-- Filter out everything that took less than two hours (i.e., remove from the collection)
-- Multiply the each duration by a per-hour rate for billing (you can decide yourself what Maartje should earn per hour) and sum it all up.
-- Output a formatted Euro amount, rounded to Euro cents, e.g: `€ 12.34`.
-- Choose variable and parameters names that most accurately describe their contents or purpose. When naming an array, use a plural form, e.g. `durations`. For a single item, use a singular form, e.g. `duration`. For details, see [Naming Conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md).
-- Don't forget to use `=>`.
-
-## Step 3: ROVER
-
-Finish up to chapter 7: JSON on [roverjs.com](http://roverjs.com/)! (Alternative site: [roverjs.taalmap.nl](http://roverjs.taalmap.nl/))
-
-## Step 4: **Some freeCodeCamp challenges:**
+## Step 3: Todo app: Deleting items
 
 _Deadline Saturday_
 
-1. [Comparisons with the Logical And Operator](https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator)
+We should be able to push the "destroy" button to delete an item.
 
-2. [Record Collection](https://www.freecodecamp.com/challenges/record-collection)
+**3.1** This is similar to the "toggle todo" functionality. Except that instead of changing an element, we want to remove an element.
+**3.2** We can use `filter` on the entire list of `TODOS` to remove items whose id is equal to the one we "bound" to the event listener. (again, look at how we implemented the event listener for toggling todo items).
+**3.3** Don't forget to call the `update` function in your `onDeleteItem` function!
 
-3. [Iterate over Arrays with map](https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map)
+## Step 4: (Optional) Todo app: Clearing completed items
 
+Once we completed some items, we can show a button called "clear completed" (invisible by default) to remove all items that we have completed.
+
+**4.1** In our update function, get the list of completed items (hint: use `filter` to filter on items that are `done`). Count the number of items in that list. If it's bigger than zero, show the `.clear-completed` button, otherwise hide it.
+**4.2** Add an event listener add the very end of our file on the `.clear-completed` button that reacts to a `click` event. Make it call a function that you create.
+**4.3** In that function, use `filter` on the entire list of `TODOS` to remove completed items.
+**4.4** Don't forget to call the `update` function at the end of the function!
 
 ## Step 5: Read before next lecture
 
@@ -126,18 +55,16 @@ _Deadline Sunday morning_
 Go trough the reading material in the [README.md](/Week3/README.md) to prepare for your next class
 
 
-### How to hand in your homework:
+## How to hand in your homework:
 
-Go over your homework one last time:
+You should have the repo for the todo list app already. Otherwise, see the link on Slack in the `#class1` channel. Just commit your changes and push: we will see them in our dashboard.
 
-- Does every file run without errors and with the correct results when you run them with Node?
-- Does every file start with `'use strict';`?
+Before committing, go over your homework one last time:
+
+- Does every file run without errors in the console?
 - Have you used `const` and `let` and avoided `var`?
 - Do the variable, function and argument names you created follow the [Naming Conventions](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md)?
 - Is your code well-formatted (see [Code Formatting](../../../../fundamentals/blob/master/fundamentals/naming_conventions.md))?
 - Have you resolved all issues flagged by ESLint and the spell checker (no wavy red and green underlines in VSCode)?
 
-
-If the answer is 'yes' to all preceding questions you are ready to follow these instructions:
-
-- [Handing in homework](../../../../fundamentals/blob/master/fundamentals/homework_pr.md)
+If the answer is 'yes' you're ready to commit and push!
